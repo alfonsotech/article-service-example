@@ -32,10 +32,10 @@ describe(`Articles service object`, function() {
 
  after(() => db.destroy())
  afterEach(() => db('blogful_articles').truncate())
+
  before(() => db('blogful_articles').truncate())
 
  //GET ALL ARTICLES
- describe(`getAllArticles()`, () => {
 
    //IF DATA
    context(`Given 'blogful_articles' has data`, () => {
@@ -125,5 +125,5 @@ describe(`Articles service object`, function() {
          })
        })
      })
-   })
+
 })
